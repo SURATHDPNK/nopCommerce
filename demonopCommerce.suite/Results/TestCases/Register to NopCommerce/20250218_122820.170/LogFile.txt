@@ -1,0 +1,17 @@
+﻿2025-02-18 12:28:20.186 +0530	START		Running TestCases/Register to NopCommerce.script
+2025-02-18 12:28:20.362 +0530	typetext		[windowsKey]r	2	on_openrunwindow	CommonUtils/Core.script
+2025-02-18 12:28:21.721 +0530	waitfor	(TEXT:"Type the name of a program")	found at (152, 883)	4	on_openrunwindow	CommonUtils/Core.script
+2025-02-18 12:28:21.868 +0530	typetext		[controlKey]a	2	on_entertext	CommonUtils/Core.script
+2025-02-18 12:28:24.170 +0530	typetext		Chrome --incognito https://demo.nopcommerce.com/[return]	4	on_entertext	CommonUtils/Core.script
+2025-02-18 12:28:24.961 +0530	imagefound	(TEXT:"Logs/NopCommerceLogo")	Unable to Find Image (TEXT:"Logs/NopCommerceLogo"). Text not found.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:28:24.965 +0530	Log		NopCommerce failed to Launch.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:28:29.201 +0530	capturescreen	launchnopcommerce_0001.png		2	on_capturescreenshot	CommonUtils/Custom.script
+2025-02-18 12:28:29.292 +0530	typetext		[homeKey]	2	on_scrolltobeginingofpage	BrowserUtils/ChromeUtils.script
+2025-02-18 12:28:31.492 +0530	click	(TEXT:"Register")	at (1187, 103)	5	on_clickonelement	CommonUtils/Core.script
+2025-02-18 12:28:34.669 +0530	imagefound	(TEXT:"Your Personal Details")	Unable to Find Image (TEXT:"Your Personal Details"). Text not found.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:28:34.674 +0530	Log		Register page is not dispalyed.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:28:34.976 +0530	capturescreen	selectregister_0001.png		2	on_capturescreenshot	CommonUtils/Custom.script
+2025-02-18 12:28:35.056 +0530	set		TEXTSTYLE = {caseSensitive:"On"}	10	on_settextstyle	CommonUtils/Custom.script
+2025-02-18 12:28:37.657 +0530	Exception	(TEXT:"Male")	No Text Found On Screen: "(TEXT:"Male")". Text not found.	5	on_clickonelement	CommonUtils/Core.script
+2025-02-18 12:28:37.802 +0530	EndTestCase		(Duration:"17.609", Errors:"1", Exceptions:"1", StartTime:"2025-02-18 12:28:20 +0530", Successes:"0", TestCase:"TestCases/Register to NopCommerce.script", Warnings:"0")
+2025-02-18 12:28:38.041 +0530	FAILURE	Screen_Error.png	Image Not Found: click Error - No Text Found On Screen: "(TEXT:"Male")". Text not found. -- Execution Time 0:00:17 TestCases/Register to NopCommerce.script

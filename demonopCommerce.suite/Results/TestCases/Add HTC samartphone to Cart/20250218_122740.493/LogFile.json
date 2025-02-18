@@ -1,0 +1,230 @@
+{
+	"entries": [
+		{
+				"message": "Running TestCases/Add HTC samartphone to Cart.script",
+				"identifier": "START",
+				"timestamp": "2025-02-18 12:27:40.506 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-02-18 12:27:40.690 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-02-18 12:27:42.049 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "found at (152, 883)",
+				"image": "(TEXT:\"Type the name of a program\")",
+				"handlerLine": 4,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:27:42.198 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:27:44.526 +0530",
+				"message": "Chrome --incognito https://demo.nopcommerce.com/[return]",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 4,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:27:45.350 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Logs/NopCommerceLogo\"). Text not found.",
+				"image": "(TEXT:\"Logs/NopCommerceLogo\")",
+				"handlerLine": 10,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:27:45.355 +0530",
+				"message": "NopCommerce failed to Launch.",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 10,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_capturescreenshot",
+				"timestamp": "2025-02-18 12:27:49.597 +0530",
+				"scriptName": "CommonUtils/Custom.script",
+				"image": "launchnopcommerce_0001.png",
+				"handlerLine": 2,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_movetoelement",
+				"timestamp": "2025-02-18 12:27:50.889 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (633, 286)",
+				"image": "(TEXT:\"Electronics\")",
+				"handlerLine": 5,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_clickonelement",
+				"timestamp": "2025-02-18 12:27:53.781 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (652, 367)",
+				"image": "(TEXT:\"Cell phones\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_selectanyproduct",
+				"timestamp": "2025-02-18 12:27:58.375 +0530",
+				"scriptName": "ApplicationUtils/HomeScreen.script",
+				"message": "found at (1338, 917)",
+				"image": "(TEXT:\"HTC smartphone\")",
+				"handlerLine": 3,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickonelement",
+				"timestamp": "2025-02-18 12:28:01.125 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (1275, 910)",
+				"image": "(TEXT:\"HTC smartphone\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_scollforelement",
+				"timestamp": "2025-02-18 12:28:05.268 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "Unable to Find Image (TEXT:\"ADD TO CART\"). Text not found.",
+				"image": "(TEXT:\"ADD TO CART\")",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_scollforelement",
+				"timestamp": "2025-02-18 12:28:05.438 +0530",
+				"message": "moved 5",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 9,
+				"identifier": "scrollwheeldown"
+			},
+		{
+				"handlerName": "on_scollforelement",
+				"timestamp": "2025-02-18 12:28:07.411 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "found at (1046, 298)",
+				"image": "(TEXT:\"ADD TO CART\")",
+				"handlerLine": 11,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_clickatcoordinates",
+				"timestamp": "2025-02-18 12:28:07.613 +0530",
+				"message": "at (1046, 298)",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_settextstyle",
+				"timestamp": "2025-02-18 12:28:07.634 +0530",
+				"message": "TEXTSTYLE = {IgnoreUnderscores:\"Yes\"}",
+				"scriptName": "CommonUtils/Custom.script",
+				"handlerLine": 10,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:28:10.755 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "Unable to Find Image (TEXT:\"The product has been added to your shopping cart\"). Text not found.",
+				"image": "(TEXT:\"The product has been added to your shopping cart\")",
+				"handlerLine": 10,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:28:10.758 +0530",
+				"message": "Product Added to Shopping Cart message is not displayed.",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 10,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_settextstyle",
+				"timestamp": "2025-02-18 12:28:10.797 +0530",
+				"message": "TEXTSTYLE = ",
+				"scriptName": "CommonUtils/Custom.script",
+				"handlerLine": 10,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_capturescreenshot",
+				"timestamp": "2025-02-18 12:28:10.984 +0530",
+				"scriptName": "CommonUtils/Custom.script",
+				"image": "verifysuccessmessageofproductaddingtocart_0001.png",
+				"handlerLine": 2,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_scrolltobeginingofpage",
+				"timestamp": "2025-02-18 12:28:11.055 +0530",
+				"message": "[homeKey]",
+				"scriptName": "BrowserUtils/ChromeUtils.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_clickonelement",
+				"timestamp": "2025-02-18 12:28:12.702 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (239, 104)",
+				"image": "(TEXT:\"Shopping cart\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_capturescreenshot",
+				"timestamp": "2025-02-18 12:28:12.828 +0530",
+				"scriptName": "CommonUtils/Custom.script",
+				"image": "selectshoppingcart_0001.png",
+				"handlerLine": 2,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_terminateallwindows",
+				"timestamp": "2025-02-18 12:28:13.458 +0530",
+				"message": "[windowsAltKey]f",
+				"scriptName": "BrowserUtils/ChromeUtils.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_terminateallwindows",
+				"timestamp": "2025-02-18 12:28:14.205 +0530",
+				"message": "x",
+				"scriptName": "BrowserUtils/ChromeUtils.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"message": "(Duration:\"33.705\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-02-18 12:27:40 +0530\", Successes:\"1\", TestCase:\"TestCases/Add HTC samartphone to Cart.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-18 12:28:14.218 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:33 TestCases/Add HTC samartphone to Cart.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-02-18 12:28:14.267 +0530"
+			}
+	],
+	"createdTimestamp": "2025-02-18 12:27:40.512 +0530"
+}

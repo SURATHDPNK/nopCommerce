@@ -1,0 +1,8 @@
+﻿set universal StaticWait to 60
+
+//Common Data
+"CommonUtilities/ExternalFileInteractions".ReadSingleRecord "SampleUserData.xlsx", "Common_Data", "Yet"
+set Global Browser to  Global CurrentRecord.Browser
+set Global Url to Global CurrentRecord.Url
+set Global Username to Global CurrentRecord.Username
+set Global Password to Global CurrentRecord.Password

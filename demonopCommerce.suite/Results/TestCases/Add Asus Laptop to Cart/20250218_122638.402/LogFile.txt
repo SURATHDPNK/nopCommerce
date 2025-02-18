@@ -1,0 +1,11 @@
+﻿2025-02-18 12:26:38.415 +0530	START		Running TestCases/Add Asus Laptop to Cart.script
+2025-02-18 12:26:38.709 +0530	typetext		[windowsKey]r	2	on_openrunwindow	CommonUtils/Core.script
+2025-02-18 12:26:44.371 +0530	waitfor	(TEXT:"Type the name of a program")	found at (152, 883)	4	on_openrunwindow	CommonUtils/Core.script
+2025-02-18 12:26:44.513 +0530	typetext		[controlKey]a	2	on_entertext	CommonUtils/Core.script
+2025-02-18 12:26:46.828 +0530	typetext		Chrome --incognito https://demo.nopcommerce.com/[return]	4	on_entertext	CommonUtils/Core.script
+2025-02-18 12:26:47.676 +0530	imagefound	(TEXT:"Logs/NopCommerceLogo")	Unable to Find Image (TEXT:"Logs/NopCommerceLogo"). Text not found.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:26:47.681 +0530	Log		NopCommerce failed to Launch.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:26:51.842 +0530	capturescreen	launchnopcommerce_0001.png		2	on_capturescreenshot	CommonUtils/Custom.script
+2025-02-18 12:26:52.301 +0530	Exception	(TEXT:"Computers")	No Text Found On Screen: "(TEXT:"Computers")". Text not found.	5	on_movetoelement	CommonUtils/Core.script
+2025-02-18 12:26:52.334 +0530	EndTestCase		(Duration:"13.911", Errors:"1", Exceptions:"1", StartTime:"2025-02-18 12:26:38 +0530", Successes:"0", TestCase:"TestCases/Add Asus Laptop to Cart.script", Warnings:"0")
+2025-02-18 12:26:52.467 +0530	FAILURE	Screen_Error.png	Image Not Found: moveto Error - No Text Found On Screen: "(TEXT:"Computers")". Text not found. -- Execution Time 0:00:13 TestCases/Add Asus Laptop to Cart.script

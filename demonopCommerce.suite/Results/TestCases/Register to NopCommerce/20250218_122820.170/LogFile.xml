@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/Register to NopCommerce_script" package="demonopCommerce.suite" timestamp="2025-02-18 12:28:20.170 +0530"
+ tests="1"  failures="1" errors="1" time="17.631000">
+  <properties>
+   <property name="RunDate" value="2025-02-18 12:28:20.170 +0530"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="TestCases/Register to NopCommerce.script" assertions="1" status="error"  time="17.609">
+    <failure type="FAILURE" message="Image Not Found: click Error - No Text Found On Screen: &quot;(TEXT:&quot;Male&quot;)&quot;. Text not found. -- Execution Time 0:00:17 TestCases/Register to NopCommerce.script" />
+    <error type="Exception" message="No Text Found On Screen: &quot;(TEXT:&quot;Male&quot;)&quot;. Text not found." />
+  </testcase>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,28 @@
+﻿2025-02-18 12:27:40.506 +0530	START		Running TestCases/Add HTC samartphone to Cart.script
+2025-02-18 12:27:40.690 +0530	typetext		[windowsKey]r	2	on_openrunwindow	CommonUtils/Core.script
+2025-02-18 12:27:42.049 +0530	waitfor	(TEXT:"Type the name of a program")	found at (152, 883)	4	on_openrunwindow	CommonUtils/Core.script
+2025-02-18 12:27:42.198 +0530	typetext		[controlKey]a	2	on_entertext	CommonUtils/Core.script
+2025-02-18 12:27:44.526 +0530	typetext		Chrome --incognito https://demo.nopcommerce.com/[return]	4	on_entertext	CommonUtils/Core.script
+2025-02-18 12:27:45.350 +0530	imagefound	(TEXT:"Logs/NopCommerceLogo")	Unable to Find Image (TEXT:"Logs/NopCommerceLogo"). Text not found.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:27:45.355 +0530	Log		NopCommerce failed to Launch.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:27:49.597 +0530	capturescreen	launchnopcommerce_0001.png		2	on_capturescreenshot	CommonUtils/Custom.script
+2025-02-18 12:27:50.889 +0530	moveto	(TEXT:"Electronics")	at (633, 286)	5	on_movetoelement	CommonUtils/Core.script
+2025-02-18 12:27:53.781 +0530	click	(TEXT:"Cell phones")	at (652, 367)	5	on_clickonelement	CommonUtils/Core.script
+2025-02-18 12:27:58.375 +0530	imagefound	(TEXT:"HTC smartphone")	found at (1338, 917)	3	on_selectanyproduct	ApplicationUtils/HomeScreen.script
+2025-02-18 12:28:01.125 +0530	click	(TEXT:"HTC smartphone")	at (1275, 910)	5	on_clickonelement	CommonUtils/Core.script
+2025-02-18 12:28:05.268 +0530	imagefound	(TEXT:"ADD TO CART")	Unable to Find Image (TEXT:"ADD TO CART"). Text not found.	8	on_scollforelement	CommonUtils/Core.script
+2025-02-18 12:28:05.438 +0530	scrollwheeldown		moved 5	9	on_scollforelement	CommonUtils/Core.script
+2025-02-18 12:28:07.411 +0530	imagefound	(TEXT:"ADD TO CART")	found at (1046, 298)	11	on_scollforelement	CommonUtils/Core.script
+2025-02-18 12:28:07.613 +0530	click		at (1046, 298)	2	on_clickatcoordinates	CommonUtils/Core.script
+2025-02-18 12:28:07.634 +0530	set		TEXTSTYLE = {IgnoreUnderscores:"Yes"}	10	on_settextstyle	CommonUtils/Custom.script
+2025-02-18 12:28:10.755 +0530	imagefound	(TEXT:"The product has been added to your shopping cart")	Unable to Find Image (TEXT:"The product has been added to your shopping cart"). Text not found.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:28:10.758 +0530	Log		Product Added to Shopping Cart message is not displayed.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:28:10.797 +0530	set		TEXTSTYLE = 	10	on_settextstyle	CommonUtils/Custom.script
+2025-02-18 12:28:10.984 +0530	capturescreen	verifysuccessmessageofproductaddingtocart_0001.png		2	on_capturescreenshot	CommonUtils/Custom.script
+2025-02-18 12:28:11.055 +0530	typetext		[homeKey]	2	on_scrolltobeginingofpage	BrowserUtils/ChromeUtils.script
+2025-02-18 12:28:12.702 +0530	click	(TEXT:"Shopping cart")	at (239, 104)	5	on_clickonelement	CommonUtils/Core.script
+2025-02-18 12:28:12.828 +0530	capturescreen	selectshoppingcart_0001.png		2	on_capturescreenshot	CommonUtils/Custom.script
+2025-02-18 12:28:13.458 +0530	typetext		[windowsAltKey]f	2	on_terminateallwindows	BrowserUtils/ChromeUtils.script
+2025-02-18 12:28:14.205 +0530	typetext		x	3	on_terminateallwindows	BrowserUtils/ChromeUtils.script
+2025-02-18 12:28:14.218 +0530	EndTestCase		(Duration:"33.705", Errors:"0", Exceptions:"0", StartTime:"2025-02-18 12:27:40 +0530", Successes:"1", TestCase:"TestCases/Add HTC samartphone to Cart.script", Warnings:"0")
+2025-02-18 12:28:14.267 +0530	SUCCESS		Execution Time 0:00:33 TestCases/Add HTC samartphone to Cart.script

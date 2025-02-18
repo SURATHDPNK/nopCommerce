@@ -1,0 +1,88 @@
+{
+	"entries": [
+		{
+				"message": "Running TestCases/Add Asus Laptop to Cart.script",
+				"identifier": "START",
+				"timestamp": "2025-02-18 12:26:38.415 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-02-18 12:26:38.709 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-02-18 12:26:44.371 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "found at (152, 883)",
+				"image": "(TEXT:\"Type the name of a program\")",
+				"handlerLine": 4,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:26:44.513 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:26:46.828 +0530",
+				"message": "Chrome --incognito https://demo.nopcommerce.com/[return]",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 4,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:26:47.676 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Logs/NopCommerceLogo\"). Text not found.",
+				"image": "(TEXT:\"Logs/NopCommerceLogo\")",
+				"handlerLine": 10,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:26:47.681 +0530",
+				"message": "NopCommerce failed to Launch.",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 10,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_capturescreenshot",
+				"timestamp": "2025-02-18 12:26:51.842 +0530",
+				"scriptName": "CommonUtils/Custom.script",
+				"image": "launchnopcommerce_0001.png",
+				"handlerLine": 2,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_movetoelement",
+				"timestamp": "2025-02-18 12:26:52.301 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "No Text Found On Screen: \"(TEXT:\"Computers\")\". Text not found.",
+				"image": "(TEXT:\"Computers\")",
+				"handlerLine": 5,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"13.911\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2025-02-18 12:26:38 +0530\", Successes:\"0\", TestCase:\"TestCases/Add Asus Laptop to Cart.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-18 12:26:52.334 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Image Not Found: moveto Error - No Text Found On Screen: \"(TEXT:\"Computers\")\". Text not found. -- Execution Time 0:00:13 TestCases/Add Asus Laptop to Cart.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-02-18 12:26:52.467 +0530"
+			}
+	],
+	"createdTimestamp": "2025-02-18 12:26:38.421 +0530"
+}
