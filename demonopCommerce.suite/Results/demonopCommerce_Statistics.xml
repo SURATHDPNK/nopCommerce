@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<statistics>
+ <script name="TestCases/Add Asus Laptop to Cart">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>2</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2025-02-18 12:26:38 +0530</FirstRun>
+  <LastRun>2025-02-18 12:26:59 +0530</LastRun>
+  <TotalTimeOnSuccess>31.757000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Register to NopCommerce">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>2</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2025-02-18 12:28:20 +0530</FirstRun>
+  <LastRun>2025-02-18 12:28:55 +0530</LastRun>
+  <TotalTimeOnSuccess>49.210000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestCases/Add HTC samartphone to Cart">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-02-18 12:27:40 +0530</FirstRun>
+  <LastRun>2025-02-18 12:27:40 +0530</LastRun>
+  <TotalTimeOnSuccess>33.724000</TotalTimeOnSuccess>
+ </script>
+</statistics>

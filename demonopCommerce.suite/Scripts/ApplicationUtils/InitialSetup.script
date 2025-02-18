@@ -1,0 +1,9 @@
+﻿to LaunchNopCommerce
+	Put "DataHandlingUtils/ExternalFileInteractions".ReadSingleRecord ("SampleUserData.xlsx", "Common_Data", "Flag", "Yet") into BasicData
+	"CommonUtils/Core".LaunchApplication BasicData.Browser&&BasicData.Url
+	"CommonUtils/Core".VerifyElement "Logs/NopCommerceLogo", "NopCommerce Launched succeefully", "NopCommerce failed to Launch." 
+	wait 4
+	"CommonUtils/Custom".CaptureScreenShot param(0)
+end LaunchNopCommerce
+
+

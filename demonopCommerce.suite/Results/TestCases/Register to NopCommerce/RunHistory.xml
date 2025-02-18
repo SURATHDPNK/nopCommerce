@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="TestCases/Register to NopCommerce">
+ <run>
+  <RunDate>2025-02-18 12:28:20.170 +0530</RunDate>
+  <Status>Failure</Status>
+  <Duration>17.631000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250218_122820.170/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Text Found On Screen: &quot;(TEXT:&quot;Male&quot;)&quot;. Text not found.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-02-18 12:28:55.505 +0530</RunDate>
+  <Status>Success</Status>
+  <Duration>49.210000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20250218_122855.505/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

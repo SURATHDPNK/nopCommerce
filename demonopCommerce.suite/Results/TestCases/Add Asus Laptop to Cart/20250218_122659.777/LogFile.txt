@@ -1,0 +1,28 @@
+﻿2025-02-18 12:26:59.786 +0530	START		Running TestCases/Add Asus Laptop to Cart.script
+2025-02-18 12:26:59.932 +0530	typetext		[windowsKey]r	2	on_openrunwindow	CommonUtils/Core.script
+2025-02-18 12:27:01.278 +0530	waitfor	(TEXT:"Type the name of a program")	found at (152, 883)	4	on_openrunwindow	CommonUtils/Core.script
+2025-02-18 12:27:01.428 +0530	typetext		[controlKey]a	2	on_entertext	CommonUtils/Core.script
+2025-02-18 12:27:03.780 +0530	typetext		Chrome --incognito https://demo.nopcommerce.com/[return]	4	on_entertext	CommonUtils/Core.script
+2025-02-18 12:27:04.630 +0530	imagefound	(TEXT:"Logs/NopCommerceLogo")	Unable to Find Image (TEXT:"Logs/NopCommerceLogo"). Text not found.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:27:04.636 +0530	Log		NopCommerce failed to Launch.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:27:08.878 +0530	capturescreen	launchnopcommerce_0001.png		2	on_capturescreenshot	CommonUtils/Custom.script
+2025-02-18 12:27:10.162 +0530	moveto	(TEXT:"Computers")	at (483, 286)	5	on_movetoelement	CommonUtils/Core.script
+2025-02-18 12:27:13.390 +0530	click	(TEXT:"Notebooks")	at (503, 367)	5	on_clickonelement	CommonUtils/Core.script
+2025-02-18 12:27:17.965 +0530	imagefound	(TEXT:"Asus Laptop")	found at (1028, 917)	3	on_selectanyproduct	ApplicationUtils/HomeScreen.script
+2025-02-18 12:27:19.590 +0530	click	(TEXT:"Asus Laptop")	at (981, 910)	5	on_clickonelement	CommonUtils/Core.script
+2025-02-18 12:27:23.104 +0530	imagefound	(TEXT:"ADD TO CART")	Unable to Find Image (TEXT:"ADD TO CART"). Text not found.	8	on_scollforelement	CommonUtils/Core.script
+2025-02-18 12:27:23.325 +0530	scrollwheeldown		moved 5	9	on_scollforelement	CommonUtils/Core.script
+2025-02-18 12:27:25.029 +0530	imagefound	(TEXT:"ADD TO CART")	found at (1046, 244)	11	on_scollforelement	CommonUtils/Core.script
+2025-02-18 12:27:25.242 +0530	click		at (1046, 244)	2	on_clickatcoordinates	CommonUtils/Core.script
+2025-02-18 12:27:25.292 +0530	set		TEXTSTYLE = {IgnoreUnderscores:"Yes"}	10	on_settextstyle	CommonUtils/Custom.script
+2025-02-18 12:27:28.114 +0530	imagefound	(TEXT:"The product has been added to your shopping cart")	Unable to Find Image (TEXT:"The product has been added to your shopping cart"). Text not found.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:27:28.118 +0530	Log		Product Added to Shopping Cart message is not displayed.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:27:28.170 +0530	set		TEXTSTYLE = 	10	on_settextstyle	CommonUtils/Custom.script
+2025-02-18 12:27:28.305 +0530	capturescreen	verifysuccessmessageofproductaddingtocart_0001.png		2	on_capturescreenshot	CommonUtils/Custom.script
+2025-02-18 12:27:28.385 +0530	typetext		[homeKey]	2	on_scrolltobeginingofpage	BrowserUtils/ChromeUtils.script
+2025-02-18 12:27:30.022 +0530	click	(TEXT:"Shopping cart")	at (239, 104)	5	on_clickonelement	CommonUtils/Core.script
+2025-02-18 12:27:30.154 +0530	capturescreen	selectshoppingcart_0001.png		2	on_capturescreenshot	CommonUtils/Custom.script
+2025-02-18 12:27:30.771 +0530	typetext		[windowsAltKey]f	2	on_terminateallwindows	BrowserUtils/ChromeUtils.script
+2025-02-18 12:27:31.509 +0530	typetext		x	3	on_terminateallwindows	BrowserUtils/ChromeUtils.script
+2025-02-18 12:27:31.535 +0530	EndTestCase		(Duration:"31.744", Errors:"0", Exceptions:"0", StartTime:"2025-02-18 12:26:59 +0530", Successes:"1", TestCase:"TestCases/Add Asus Laptop to Cart.script", Warnings:"0")
+2025-02-18 12:27:31.617 +0530	SUCCESS		Execution Time 0:00:31 TestCases/Add Asus Laptop to Cart.script

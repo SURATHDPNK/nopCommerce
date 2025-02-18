@@ -1,0 +1,150 @@
+﻿# Navigate to the previous page.
+to PageBackward
+	TypeText altKey, leftArrow
+end PageBackward
+
+# Navigate to the next page.
+to PageForward
+	TypeText altKey, rightArrow	
+end PageForward
+
+# Refresh the current page.
+to PageRefresh
+	TypeText controlKey, "r"	
+end PageRefresh
+
+# Open a link in a new tab.
+to OpenLinkInNewTab link, searchArea	
+	KeyDown controlKey
+	if (searchArea is not empty) then
+		Click {text:link, SearchRectangle:"CommonUtils/Custom".Screenpart(searchArea), waitfor:Universal StaticWait}
+	else 
+		Click {text:link, waitfor:Universal StaticWait}
+	end if
+	KeyUp controlKey	
+end OpenLinkInNewTab
+
+# Open a link in a new window.
+to OpenLinkInNewWindow link,searchArea
+	KeyDown shiftKey
+	if (searchArea is not empty) then
+		Click {text:link, SearchRectangle:"CommonUtils/Custom".Screenpart(searchArea), waitfor:Universal StaticWait}
+	else 
+		Click {text:link, waitfor:Universal StaticWait}
+	end if
+	KeyUp shiftKey	
+end OpenLinkInNewWindow
+
+# Edit the URL in the browser's address bar.
+to EditUrlInAddressBar newURL	
+	TypeText controlKey, "l"
+	TypeText newURL,return	
+end EditUrlInAddressBar
+
+# Maximize the browser window.
+to MaximizeWindow 	
+	TypeText windowsKey,upArrow	
+end MaximizeWindow
+
+# Minimize the browser window.
+to MinimizeWindow
+	TypeText windowsKey,upArrow
+end MinimizeWindow
+
+# Clear the content in a text field.
+to ClearContentInField	
+	TypeText controlKey,homeKey
+	TypeText controlKey,shiftKey,endKey
+	TypeText deleteKey	
+end ClearContentInField
+
+# Clear the browsing history.
+to ClearHistory	
+	TypeText controlKey,shiftKey,deleteKey
+	set the SearchRectangle to "CommonUtils/Custom".Screenpart("VerticalMiddle")
+	Click {text:"Time range", hotspot:[110,0], waitfor:Universal StaticWait}
+	Click {text:"All time", waitfor:Universal StaticWait}
+	Click {text:"Clear data", caseSensitive:true, waitfor:Universal StaticWait}	
+	set the SearchRectangle to empty
+end ClearHistory
+
+# Close the focused window.
+to TerminateCurrentWindow
+	TypeText altKey, f4	
+end TerminateCurrentWindow
+
+# Close all open browser windows.
+to TerminateAllWindows
+	TypeText altKey, "f"
+	TypeText "x"	
+end TerminateAllWindows
+
+# Restore the most recently closed tab.
+to RestoreTerminatedTab	
+	TypeText controlKey, shiftKey, "t"	
+end RestoreTerminatedTab
+
+# Close the currently focused tab.
+to CloseFocusedTab
+	TypeText controlKey, "w"	
+end CloseFocusedTab
+
+# Open a new tab.
+to OpenNewTab
+	TypeText controlKey, "t"	
+end OpenNewTab
+
+# Open a new browser window.
+to OpenNewWindow
+	TypeText controlKey, "n"	
+end OpenNewWindow
+
+# Open a new Incognito window.
+to OpenNewIncognitoWindow
+	TypeText controlKey,shiftKey,"n"	
+end OpenNewIncognitoWindow
+
+# Switch to the next tab.
+to JumpToNextTab
+	TypeText controlKey,tabKey
+end JumpToNextTab
+
+# Switch to the previous tab.
+to JumpToPreviousTab 	
+	TypeText controlKey,shiftKey,tabKey	
+end JumpToPreviousTab
+
+# Jump to a specific tab by its number.
+to JumpToSpecificTab tabNumber
+	TypeText controlKey,tabNumber	
+end JumpToSpecificTab
+
+# Zoom in on the page.
+to PageZoomIn	
+	TypeText controlKey,"+"	
+end PageZoomIn
+
+# Zoom out on the page.
+to PageZoomOut	
+	TypeText controlKey,"-"	
+end PageZoomOut
+
+# Reset the page zoom to normal.
+to ResetPageZoom	
+	TypeText controlKey,0	
+end ResetPageZoom
+
+# Scroll to the bottom of the page.
+to ScrollToEndOfPage
+	TypeText endKey	
+end ScrollToEndOfPage
+
+# Scroll to the top of the page.
+to ScrollToBeginingOfPage
+	TypeText homeKey	
+end ScrollToBeginingOfPage
+
+# Hide or show the bookmarks tab.
+to HideBookmarksBar
+	TypeText controlKey,shiftKey,"b"	
+end HideBookmarksBar

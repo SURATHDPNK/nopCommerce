@@ -1,0 +1,87 @@
+﻿to ComputersMenu 
+	Params ComputersCategory
+	"CommonUtils/Core".MoveToElement "Computers"
+	wait 1
+	"CommonUtils/Core".ClickOnElement ComputersCategory
+end ComputersMenu
+
+
+to ElectronicsMenu 
+	Params ElectronicsCategory
+	"CommonUtils/Core".MoveToElement "Electronics"
+	wait 1
+	"CommonUtils/Core".ClickOnElement ElectronicsCategory
+end ElectronicsMenu
+
+
+to SelectAnyProduct 
+	Params ProductName
+	repeat until ImageFound(text:ProductName,IgnoreNewlines:On, waitFor:30)
+		ScrollWheelDown 5
+	end repeat
+	"CommonUtils/Core".ClickOnElement ProductName
+end SelectAnyProduct
+
+
+to AddToCart
+	"CommonUtils/Core".ScollForElement "ADD TO CART"
+	"CommonUtils/Core".ClickAtCoordinates
+end AddToCart
+
+
+to VerifySuccessMessageOfProductAddingToCart
+	"CommonUtils/Custom".SetTextstyle "IgnoreUnderscores"
+	"CommonUtils/Core".VerifyElement "The product has been added to your shopping cart", "Product Added to Shopping Cart message dispalyed succeefully", "Product Added to Shopping Cart message is not displayed." 
+	"CommonUtils/Custom".SetTextstyle "Default"
+	"CommonUtils/Custom".CaptureScreenShot param(0)
+end VerifySuccessMessageOfProductAddingToCart
+
+
+to SelectShoppingCart
+	"BrowserUtils/ChromeUtils".ScrollToBeginingOfPage
+	"CommonUtils/Core".ClickOnElement "Shopping cart"
+	"CommonUtils/Custom".CaptureScreenShot param(0)
+end SelectShoppingCart
+
+
+to SelectRegister
+	"BrowserUtils/ChromeUtils".ScrollToBeginingOfPage
+	"CommonUtils/Core".ClickOnElement "Register"
+	"CommonUtils/Core".VerifyElement "Your Personal Details", "Register page is dispalyed.", "Register page is not dispalyed." 
+	"CommonUtils/Custom".CaptureScreenShot param(0)
+end SelectRegister
+
+
+to NewRegister
+	Put "DataHandlingUtils/ExternalFileInteractions".ReadSingleRecord ("SampleUserData.xlsx", "New_Registeration", "Flag", "Yet") into RegisterForm
+	"CommonUtils/Custom".SetTextstyle "TurnOnCaseSensitive"
+	"CommonUtils/Core".ClickOnElement RegisterForm.Gender, [-10, 0]
+	"CommonUtils/Core".EnterTextInField "First name", RegisterForm.Firstname, [80, 0]
+	"CommonUtils/Core".EnterTextInField "Last name", RegisterForm.Lastname, [80, 0]
+	"CommonUtils/Core".EnterTextInField "Email:", RegisterForm.Email, [80, 0]
+	"CommonUtils/Core".EnterTextInField "Company name:", RegisterForm.Companyname, [80, 0]
+	"CommonUtils/Core".ScollForElement "REGISTER"
+	"CommonUtils/Core".EnterTextInField "Password:", RegisterForm.Password, [80, 0]
+	"CommonUtils/Core".EnterTextInField "Confirm password", RegisterForm.Password, [80, 0]
+	"CommonUtils/Core".ClickOnElement "REGISTER"
+	"CommonUtils/Custom".SetTextstyle "Default"
+	wait 2
+end NewRegister
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
