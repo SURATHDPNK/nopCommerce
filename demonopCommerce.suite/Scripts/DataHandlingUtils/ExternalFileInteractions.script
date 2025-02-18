@@ -1,0 +1,46 @@
+﻿# to Read a record from file where the condition matches
+to ReadSingleRecord ExcelName,SheetName, Flag, FlagValue 
+	set Global MyExcelDB to {file:ResourcePath(ExcelName), type:"excel",name:SheetName}
+	//set global variable to single record where username matches to given value
+	return the record of Global MyExcelDB where (Flag) is FlagValue
+end ReadSingleRecord
+
+# to Read multiple records from file where the condition matches
+to ReadMultipleRecords ExcelName, SheetName, Flag, FlagValue 
+	set Global MyExcelDB to {file:ResourcePath(ExcelName), type:"excel",name:SheetName}
+	//set global variable to multiple records where flag matches to given value
+	Set Global CurrentRecord to the records of Global MyExcelDB where (Flag) is FlagValue
+end ReadMultipleRecords
+
+# to Read multiple records from file with out any condition
+to ReadMultipleRecordsWithoutCondition ExcelName,SheetName
+	set Global MyExcelDB to {file:ResourcePath(ExcelName), type:"excel",name:SheetName}
+	//set global variable to multiple records where flag matches to given value
+	Set Global CurrentRecord to the records of Global MyExcelDB
+end ReadMultipleRecordsWithoutCondition
+
+# to write a single record into file
+to WriteSingleRecord ExcelName,SheetName,Price,Total
+	set Global MyExcelDB to {file:ResourcePath(ExcelName), type:"excel", writeable:"yes", name:SheetName}
+	//set a variable to record values
+	set NewRecord to {Price:Price, TotalPrice:Total}
+	//adding variable as record to file which contains data 
+	add record NewRecord to Global MyExcelDB
+end WriteSingleRecord
+
+# to Updating the Existing record
+to UpdateSingleRecord ExcelName,SheetName,UserName,Flag,User,Password
+	set Global MyExcelDB to {file:ResourcePath(ExcelName), type:"excel", writeable:"Yes", name:SheetName}
+	set Global RecordData to the record of Global myExcelDB where username is UserName
+	put Flag into Global RecordData's Flag
+	put User into Global RecordData's Username
+	put Password into Global RecordData's Password
+end UpdateSingleRecord
+
+# deleting records where the condition matches
+to DeleteRecord ExcelName, SheetName, Flag, FalgValue
+	set Global MyExcelDB to {file:ResourcePath(ExcelName), type:"excel", writeable:"Yes", name:SheetName}
+	//deleting a record where it matches with flag value
+	delete record from Global MyExcelDB where (Flag) is FalgValue 
+end DeleteRecord
+

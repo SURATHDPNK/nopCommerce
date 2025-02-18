@@ -1,0 +1,53 @@
+﻿# Set a portion of the screen as a search rectangle based on predefined regions
+function ScreenPart Portion
+	set screenPortions to {
+		TopHalf: [[0,0],[1,.5]],
+		BottomHalf: [[0,.5],[1,1]],
+		LeftHalf: [[0,0],[.5,1]],
+		RightHalf: [[.5,0],[1,1]],
+		HorizontalMiddle: [[0,.25],[1,.75]],
+		VerticalMiddle:[[.25,0],[.75,1]],
+		TopLeftQuadrant:[[0,0],[.5,.5]],
+		TopRightQuadrant:[[.5,0],[1,.5]],
+		BottomLeftQuadrant:[[0,.5],[.5,1]],
+		BottomRightQuadrant:[[.5,.5],[1,1]],
+		Center:[[.25,.25],[.75,.75]]
+	}
+	set multiplier to screenPortions.(Portion)		
+	if multiplier is empty then throw "Parameter error", Portion && "is not a recognized screen portion."			
+	return [the remoteScreenSize,the remotescreenSize] * multiplier
+end ScreenPart
+
+# Set text style based on a predefined set of style properties
+to SetTextstyle txtStyle
+	set properties to{
+		Default: empty,
+		GrayText:{contrastColor:[200,200,200], contrast:"On", contrastTolerance:"45"},
+		LightBlueButton:{contrastColor:[216,231,255], contrast:"On", contrastTolerance:"45"},
+		IgnoreUnderscores:{IgnoreUnderscores:"Yes"},
+		TurnOnCaseSensitive:{caseSensitive:On},
+	}	
+	Try
+		set the TextStyle to properties.(txtStyle)
+	Catch
+		Log txtStyle && "is not a recognized Style Properties."
+		set the TextStyle to empty
+	End try
+	return the TextStyle	
+end SetTextstyle
+
+# Capture a screenshot with a given name and incrementing filename if already exists
+to CaptureScreenShot ScreenShotName
+	CaptureScreen name:ScreenShotName, increment:"Yes"
+end CaptureScreenShot
+
+function FormSearchRectangle ReferenceElement, x1, y1, x2, y2	
+	if file (suiteinfo().imagesFolder & "/" & ReferenceElement &".png") exists or folder (suiteinfo().imagesFolder & "/" & ReferenceElement) exists then
+		Put ImageLocation(ImageName:ReferenceElement) into ReferenceElementLoc
+	else
+		Put ImageLocation(text:ReferenceElement) into ReferenceElementLoc
+	end if
+	Set ReferenceElementRectangle to [[ReferenceElementLoc.x + x1, ReferenceElementLoc.y + y1 ], [ReferenceElementLoc.x + x2, ReferenceElementLoc.y + y2]]
+	return ReferenceElementRectangle
+end FormSearchRectangle
+

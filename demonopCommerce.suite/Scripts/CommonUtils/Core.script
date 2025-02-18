@@ -1,0 +1,119 @@
+﻿# Get and log the connection name if connected
+to GetConnectionName
+	if (connectionInfo().Status is "Connected") then Log ConnectionInfo().Name
+end GetConnectionName
+
+# Open the Run window using a keypress
+to OpenRunWindow 
+	TypeText windowsKey, "r"
+	wait 1	
+	WaitFor Universal StaticWait, {text:"Type the name of a program", textDifference:3}
+end OpenRunWindow
+
+# Launch an application by passing the application path
+to LaunchApplication path
+	OpenRunWindow
+	EnterText path
+end LaunchApplication
+
+# Perform a click operation on an element using reference and offset
+to ClickOnElement ReferenceElement, Offset:[0, 0]
+	if file (suiteinfo().imagesFolder & "/" & ReferenceElement &".png") exists or folder (suiteinfo().imagesFolder & "/" & ReferenceElement) exists then
+		Click {imageName:ReferenceElement, hotspot:Offset, WaitFor:Universal StaticWait}
+	else
+		Click {text:ReferenceElement, hotspot:Offset, WaitFor:Universal StaticWait}
+	end if
+end ClickOnElement
+
+# Perform a double-click operation on an element using reference and offset
+to DoubleClickOnElement ReferenceElement, Offset:[0, 0]
+	if file (suiteinfo().imagesFolder & "/" & ReferenceElement &".png") exists or folder (suiteinfo().imagesFolder & "/" & ReferenceElement) exists then
+		DoubleClick {imageName:ReferenceElement, hotspot:Offset, WaitFor:Universal StaticWait}
+	else
+		DoubleClick {text:ReferenceElement, hotspot:Offset, WaitFor:Universal StaticWait}
+	end if
+end DoubleClickOnElement
+
+# Perform a right-click operation on an element using reference and offset
+to RightClickOnElement ReferenceElement, Offset:[0, 0]
+	if file (suiteinfo().imagesFolder & "/" & ReferenceElement &".png") exists or folder (suiteinfo().imagesFolder & "/" & ReferenceElement) exists then
+		RightClick {imageName:ReferenceElement, hotspot:Offset, WaitFor:Universal StaticWait}
+	else
+		RightClick {text:ReferenceElement, hotspot:Offset, WaitFor:Universal StaticWait}
+	end if
+end RightClickOnElement
+
+# Move the cursor to a specific element using reference and offset
+to MoveToElement ReferenceElement, Offset:[0, 0]
+	if file (suiteinfo().imagesFolder & "/" & ReferenceElement &".png") exists or folder (suiteinfo().imagesFolder & "/" & ReferenceElement) exists then
+		MoveTo {imageName:ReferenceElement, hotspot:Offset, WaitFor:Universal StaticWait}
+	else
+		MoveTo {text:ReferenceElement, hotspot:Offset, WaitFor:Universal StaticWait}
+	end if
+end MoveToElement
+
+# Perform a click operation at given coordinates
+to ClickAtCoordinates Coordinates:FoundImageLocation()
+	Click Coordinates
+end ClickAtCoordinates
+
+# Enter text in a field by clicking the reference element and typing the input
+to EnterTextInField ReferenceLabel, Input, Offset: [0, 0], ReturnIt
+	if file (suiteinfo().imagesFolder & "/" & ReferenceLabel &".png") exists or folder (suiteinfo().imagesFolder & "/" & ReferenceLabel) exists then
+		Click {imageName:ReferenceLabel, hotspot:Offset, WaitFor:Universal StaticWait}
+	else
+		Click {text:ReferenceLabel, hotspot:Offset, WaitFor:Universal StaticWait}
+	end if	
+	EnterText Input, ReturnIt
+end EnterTextInField
+
+# Type the specified input into a field with an optional return value
+to EnterText Input, ReturnIt:"Yes"
+	TypeText controlKey, "a"
+	if (ReturnIt is "Yes") then 
+		TypeText Input, return
+	else 
+		TypeText Input
+	end if
+end EnterText
+
+# Wait for an element to appear based on the reference element's image or text
+to WaitForElement ReferenceElement
+	if file (suiteinfo().imagesFolder & "/" & ReferenceElement & ".png") exists or folder (suiteinfo().imagesFolder & "/" & ReferenceElement) exists then
+		WaitFor Universal StaticWait, {imageName:ReferenceElement}
+	else
+		WaitFor Universal StaticWait, {text:ReferenceElement}
+	end if
+end WaitForElement
+
+# Verify an element's presence or absence and log appropriate messages
+to VerifyElement ElementToVerify, SuccessMsg, ErrorMsg, ElementToBePresent:"Yes"
+	if file (suiteinfo().imagesFolder & "/" & ObjectToVerify & ".png") exists or if folder (suiteinfo().imagesFolder & "/" & ObjectToVerify) exists then
+		if (ElementToBePresent is "Yes") then 
+			if ImageFound(imageName:ElementToVerify, WaitFor:Universal StaticWait) then Log SuccessMsg else Log ErrorMsg
+		else
+			if not ImageFound(imageName:ElementToVerify, WaitFor:Universal StaticWait) then Log SuccessMsg else Log ErrorMsg
+		end if
+	else
+		if (ElementToBePresent is "Yes") then 
+			if ImageFound(text:ElementToVerify, WaitFor:Universal StaticWait) then Log SuccessMsg else Log ErrorMsg
+			else
+			if not ImageFound(text:ElementToVerify, WaitFor:Universal StaticWait) then Log SuccessMsg else Log ErrorMsg
+		end if
+	end if
+end VerifyElement
+
+
+to ScollForElement ReferenceElement, WheelDown:5
+	if file (suiteinfo().imagesFolder & "/" & ReferenceElement &".png") exists or folder (suiteinfo().imagesFolder & "/" & ReferenceElement) exists then
+		repeat until ImageFound(Image:ReferenceElement, waitFor:0)
+			ScrollWheelDown WheelDown
+			wait 1
+		end repeat		
+	else
+		repeat until ImageFound(text:ReferenceElement, waitFor:0)
+			ScrollWheelDown WheelDown
+			wait 1
+		end repeat
+	end if
+end ScollForElement

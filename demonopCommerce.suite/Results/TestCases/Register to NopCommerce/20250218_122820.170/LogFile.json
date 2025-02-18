@@ -1,0 +1,138 @@
+{
+	"entries": [
+		{
+				"message": "Running TestCases/Register to NopCommerce.script",
+				"identifier": "START",
+				"timestamp": "2025-02-18 12:28:20.186 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-02-18 12:28:20.362 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-02-18 12:28:21.721 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "found at (152, 883)",
+				"image": "(TEXT:\"Type the name of a program\")",
+				"handlerLine": 4,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:28:21.868 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:28:24.170 +0530",
+				"message": "Chrome --incognito https://demo.nopcommerce.com/[return]",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 4,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:28:24.961 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Logs/NopCommerceLogo\"). Text not found.",
+				"image": "(TEXT:\"Logs/NopCommerceLogo\")",
+				"handlerLine": 10,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:28:24.965 +0530",
+				"message": "NopCommerce failed to Launch.",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 10,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_capturescreenshot",
+				"timestamp": "2025-02-18 12:28:29.201 +0530",
+				"scriptName": "CommonUtils/Custom.script",
+				"image": "launchnopcommerce_0001.png",
+				"handlerLine": 2,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_scrolltobeginingofpage",
+				"timestamp": "2025-02-18 12:28:29.292 +0530",
+				"message": "[homeKey]",
+				"scriptName": "BrowserUtils/ChromeUtils.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_clickonelement",
+				"timestamp": "2025-02-18 12:28:31.492 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (1187, 103)",
+				"image": "(TEXT:\"Register\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:28:34.669 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Your Personal Details\"). Text not found.",
+				"image": "(TEXT:\"Your Personal Details\")",
+				"handlerLine": 10,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:28:34.674 +0530",
+				"message": "Register page is not dispalyed.",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 10,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_capturescreenshot",
+				"timestamp": "2025-02-18 12:28:34.976 +0530",
+				"scriptName": "CommonUtils/Custom.script",
+				"image": "selectregister_0001.png",
+				"handlerLine": 2,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_settextstyle",
+				"timestamp": "2025-02-18 12:28:35.056 +0530",
+				"message": "TEXTSTYLE = {caseSensitive:\"On\"}",
+				"scriptName": "CommonUtils/Custom.script",
+				"handlerLine": 10,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_clickonelement",
+				"timestamp": "2025-02-18 12:28:37.657 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "No Text Found On Screen: \"(TEXT:\"Male\")\". Text not found.",
+				"image": "(TEXT:\"Male\")",
+				"handlerLine": 5,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"17.609\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2025-02-18 12:28:20 +0530\", Successes:\"0\", TestCase:\"TestCases/Register to NopCommerce.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-18 12:28:37.802 +0530"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Image Not Found: click Error - No Text Found On Screen: \"(TEXT:\"Male\")\". Text not found. -- Execution Time 0:00:17 TestCases/Register to NopCommerce.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-02-18 12:28:38.041 +0530"
+			}
+	],
+	"createdTimestamp": "2025-02-18 12:28:20.191 +0530"
+}

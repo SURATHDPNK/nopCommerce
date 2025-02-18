@@ -1,0 +1,44 @@
+﻿2025-02-18 12:28:55.515 +0530	START		Running TestCases/Register to NopCommerce.script
+2025-02-18 12:28:55.645 +0530	typetext		[windowsKey]r	2	on_openrunwindow	CommonUtils/Core.script
+2025-02-18 12:28:57.006 +0530	waitfor	(TEXT:"Type the name of a program")	found at (152, 883)	4	on_openrunwindow	CommonUtils/Core.script
+2025-02-18 12:28:57.152 +0530	typetext		[controlKey]a	2	on_entertext	CommonUtils/Core.script
+2025-02-18 12:28:59.491 +0530	typetext		Chrome --incognito https://demo.nopcommerce.com/[return]	4	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:00.302 +0530	imagefound	(TEXT:"Logs/NopCommerceLogo")	Unable to Find Image (TEXT:"Logs/NopCommerceLogo"). Text not found.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:29:00.307 +0530	Log		NopCommerce failed to Launch.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:29:04.547 +0530	capturescreen	launchnopcommerce_0001.png		2	on_capturescreenshot	CommonUtils/Custom.script
+2025-02-18 12:29:04.623 +0530	typetext		[homeKey]	2	on_scrolltobeginingofpage	BrowserUtils/ChromeUtils.script
+2025-02-18 12:29:06.801 +0530	click	(TEXT:"Register")	at (1187, 103)	5	on_clickonelement	CommonUtils/Core.script
+2025-02-18 12:29:09.994 +0530	imagefound	(TEXT:"Your Personal Details")	Unable to Find Image (TEXT:"Your Personal Details"). Text not found.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:29:09.998 +0530	Log		Register page is not dispalyed.	10	on_verifyelement	CommonUtils/Core.script
+2025-02-18 12:29:10.426 +0530	capturescreen	selectregister_0001.png		2	on_capturescreenshot	CommonUtils/Custom.script
+2025-02-18 12:29:10.520 +0530	set		TEXTSTYLE = {caseSensitive:"On"}	10	on_settextstyle	CommonUtils/Custom.script
+2025-02-18 12:29:11.842 +0530	click	(TEXT:"Male")	at (760, 519)	5	on_clickonelement	CommonUtils/Core.script
+2025-02-18 12:29:13.765 +0530	click	(TEXT:"First name")	at (752, 570)	5	on_entertextinfield	CommonUtils/Core.script
+2025-02-18 12:29:14.524 +0530	typetext		[controlKey]a	2	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:15.604 +0530	typetext		Durgaprasad	6	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:17.409 +0530	click	(TEXT:"Last name")	at (753, 625)	5	on_entertextinfield	CommonUtils/Core.script
+2025-02-18 12:29:18.172 +0530	typetext		[controlKey]a	2	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:19.090 +0530	typetext		Surath	6	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:20.925 +0530	click	(TEXT:"Email:")	at (783, 680)	5	on_entertextinfield	CommonUtils/Core.script
+2025-02-18 12:29:21.677 +0530	typetext		[controlKey]a	2	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:23.018 +0530	typetext		Test123@outlook.com	6	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:24.844 +0530	click	(TEXT:"Company name:")	at (719, 874)	5	on_entertextinfield	CommonUtils/Core.script
+2025-02-18 12:29:25.596 +0530	typetext		[controlKey]a	2	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:26.578 +0530	typetext		Keysight	6	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:28.737 +0530	imagefound	(TEXT:"REGISTER")	Unable to Find Image (TEXT:"REGISTER"). Text not found.	8	on_scollforelement	CommonUtils/Core.script
+2025-02-18 12:29:28.743 +0530	scrollwheeldown		moved 5	9	on_scollforelement	CommonUtils/Core.script
+2025-02-18 12:29:32.208 +0530	imagefound	(TEXT:"REGISTER")	Unable to Find Image (TEXT:"REGISTER"). Text not found.	11	on_scollforelement	CommonUtils/Core.script
+2025-02-18 12:29:32.215 +0530	scrollwheeldown		moved 5	9	on_scollforelement	CommonUtils/Core.script
+2025-02-18 12:29:34.023 +0530	imagefound	(TEXT:"REGISTER")	found at (951, 721)	11	on_scollforelement	CommonUtils/Core.script
+2025-02-18 12:29:34.977 +0530	click	(TEXT:"Password:")	at (757, 538)	5	on_entertextinfield	CommonUtils/Core.script
+2025-02-18 12:29:35.740 +0530	typetext		[controlKey]a	2	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:36.800 +0530	typetext		MyPassword	6	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:38.400 +0530	click	(TEXT:"Confirm password")	at (705, 593)	5	on_entertextinfield	CommonUtils/Core.script
+2025-02-18 12:29:39.153 +0530	typetext		[controlKey]a	2	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:40.218 +0530	typetext		MyPassword	6	on_entertext	CommonUtils/Core.script
+2025-02-18 12:29:41.826 +0530	click	(TEXT:"REGISTER")	at (914, 716)	5	on_clickonelement	CommonUtils/Core.script
+2025-02-18 12:29:41.851 +0530	set		TEXTSTYLE = 	10	on_settextstyle	CommonUtils/Custom.script
+2025-02-18 12:29:43.939 +0530	typetext		[windowsAltKey]f	2	on_terminateallwindows	BrowserUtils/ChromeUtils.script
+2025-02-18 12:29:44.688 +0530	typetext		x	3	on_terminateallwindows	BrowserUtils/ChromeUtils.script
+2025-02-18 12:29:44.716 +0530	EndTestCase		(Duration:"49.196", Errors:"0", Exceptions:"0", StartTime:"2025-02-18 12:28:55 +0530", Successes:"1", TestCase:"TestCases/Register to NopCommerce.script", Warnings:"0")
+2025-02-18 12:29:44.776 +0530	SUCCESS		Execution Time 0:00:49 TestCases/Register to NopCommerce.script

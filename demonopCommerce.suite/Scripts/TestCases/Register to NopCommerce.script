@@ -1,0 +1,5 @@
+﻿"ApplicationUtils/InitialSetup".LaunchNopCommerce
+"ApplicationUtils/HomeScreen".SelectRegister
+"ApplicationUtils/HomeScreen".NewRegister
+"BrowserUtils/ChromeUtils".TerminateAllWindows
+

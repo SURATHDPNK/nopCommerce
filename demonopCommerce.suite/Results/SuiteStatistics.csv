@@ -1,0 +1,4 @@
+﻿Script,Last Status,Runs,Fails,First Run,Last Run,Avg Time(Success)
+TestCases/Add Asus Laptop to Cart,Success,2,1,2025-02-18 12:26:38 +0530,2025-02-18 12:26:59 +0530,0:00:31
+TestCases/Register to NopCommerce,Success,2,1,2025-02-18 12:28:20 +0530,2025-02-18 12:28:55 +0530,0:00:49
+TestCases/Add HTC samartphone to Cart,Success,1,0,2025-02-18 12:27:40 +0530,2025-02-18 12:27:40 +0530,0:00:33

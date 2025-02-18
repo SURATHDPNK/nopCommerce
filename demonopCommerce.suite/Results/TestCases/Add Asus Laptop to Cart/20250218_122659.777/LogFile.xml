@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="TestCases/Add Asus Laptop to Cart_script" package="demonopCommerce.suite" timestamp="2025-02-18 12:26:59.777 +0530"
+ tests="1"  failures="0" errors="0" time="31.757000">
+  <properties>
+   <property name="RunDate" value="2025-02-18 12:26:59.777 +0530"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="TestCases/Add Asus Laptop to Cart.script" assertions="1" status="success"  time="31.744">
+  </testcase>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,363 @@
+{
+	"entries": [
+		{
+				"message": "Running TestCases/Register to NopCommerce.script",
+				"identifier": "START",
+				"timestamp": "2025-02-18 12:28:55.515 +0530"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-02-18 12:28:55.645 +0530",
+				"message": "[windowsKey]r",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_openrunwindow",
+				"timestamp": "2025-02-18 12:28:57.006 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "found at (152, 883)",
+				"image": "(TEXT:\"Type the name of a program\")",
+				"handlerLine": 4,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:28:57.152 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:28:59.491 +0530",
+				"message": "Chrome --incognito https://demo.nopcommerce.com/[return]",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 4,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:29:00.302 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Logs/NopCommerceLogo\"). Text not found.",
+				"image": "(TEXT:\"Logs/NopCommerceLogo\")",
+				"handlerLine": 10,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:29:00.307 +0530",
+				"message": "NopCommerce failed to Launch.",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 10,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_capturescreenshot",
+				"timestamp": "2025-02-18 12:29:04.547 +0530",
+				"scriptName": "CommonUtils/Custom.script",
+				"image": "launchnopcommerce_0001.png",
+				"handlerLine": 2,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_scrolltobeginingofpage",
+				"timestamp": "2025-02-18 12:29:04.623 +0530",
+				"message": "[homeKey]",
+				"scriptName": "BrowserUtils/ChromeUtils.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_clickonelement",
+				"timestamp": "2025-02-18 12:29:06.801 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (1187, 103)",
+				"image": "(TEXT:\"Register\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:29:09.994 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "Unable to Find Image (TEXT:\"Your Personal Details\"). Text not found.",
+				"image": "(TEXT:\"Your Personal Details\")",
+				"handlerLine": 10,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_verifyelement",
+				"timestamp": "2025-02-18 12:29:09.998 +0530",
+				"message": "Register page is not dispalyed.",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 10,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_capturescreenshot",
+				"timestamp": "2025-02-18 12:29:10.426 +0530",
+				"scriptName": "CommonUtils/Custom.script",
+				"image": "selectregister_0001.png",
+				"handlerLine": 2,
+				"identifier": "capturescreen"
+			},
+		{
+				"handlerName": "on_settextstyle",
+				"timestamp": "2025-02-18 12:29:10.520 +0530",
+				"message": "TEXTSTYLE = {caseSensitive:\"On\"}",
+				"scriptName": "CommonUtils/Custom.script",
+				"handlerLine": 10,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_clickonelement",
+				"timestamp": "2025-02-18 12:29:11.842 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (760, 519)",
+				"image": "(TEXT:\"Male\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_entertextinfield",
+				"timestamp": "2025-02-18 12:29:13.765 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (752, 570)",
+				"image": "(TEXT:\"First name\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:14.524 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:15.604 +0530",
+				"message": "Durgaprasad",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertextinfield",
+				"timestamp": "2025-02-18 12:29:17.409 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (753, 625)",
+				"image": "(TEXT:\"Last name\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:18.172 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:19.090 +0530",
+				"message": "Surath",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertextinfield",
+				"timestamp": "2025-02-18 12:29:20.925 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (783, 680)",
+				"image": "(TEXT:\"Email:\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:21.677 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:23.018 +0530",
+				"message": "Test123@outlook.com",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertextinfield",
+				"timestamp": "2025-02-18 12:29:24.844 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (719, 874)",
+				"image": "(TEXT:\"Company name:\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:25.596 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:26.578 +0530",
+				"message": "Keysight",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_scollforelement",
+				"timestamp": "2025-02-18 12:29:28.737 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "Unable to Find Image (TEXT:\"REGISTER\"). Text not found.",
+				"image": "(TEXT:\"REGISTER\")",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_scollforelement",
+				"timestamp": "2025-02-18 12:29:28.743 +0530",
+				"message": "moved 5",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 9,
+				"identifier": "scrollwheeldown"
+			},
+		{
+				"handlerName": "on_scollforelement",
+				"timestamp": "2025-02-18 12:29:32.208 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "Unable to Find Image (TEXT:\"REGISTER\"). Text not found.",
+				"image": "(TEXT:\"REGISTER\")",
+				"handlerLine": 11,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_scollforelement",
+				"timestamp": "2025-02-18 12:29:32.215 +0530",
+				"message": "moved 5",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 9,
+				"identifier": "scrollwheeldown"
+			},
+		{
+				"handlerName": "on_scollforelement",
+				"timestamp": "2025-02-18 12:29:34.023 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "found at (951, 721)",
+				"image": "(TEXT:\"REGISTER\")",
+				"handlerLine": 11,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_entertextinfield",
+				"timestamp": "2025-02-18 12:29:34.977 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (757, 538)",
+				"image": "(TEXT:\"Password:\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:35.740 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:36.800 +0530",
+				"message": "MyPassword",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertextinfield",
+				"timestamp": "2025-02-18 12:29:38.400 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (705, 593)",
+				"image": "(TEXT:\"Confirm password\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:39.153 +0530",
+				"message": "[controlKey]a",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_entertext",
+				"timestamp": "2025-02-18 12:29:40.218 +0530",
+				"message": "MyPassword",
+				"scriptName": "CommonUtils/Core.script",
+				"handlerLine": 6,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_clickonelement",
+				"timestamp": "2025-02-18 12:29:41.826 +0530",
+				"scriptName": "CommonUtils/Core.script",
+				"message": "at (914, 716)",
+				"image": "(TEXT:\"REGISTER\")",
+				"handlerLine": 5,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_settextstyle",
+				"timestamp": "2025-02-18 12:29:41.851 +0530",
+				"message": "TEXTSTYLE = ",
+				"scriptName": "CommonUtils/Custom.script",
+				"handlerLine": 10,
+				"identifier": "set"
+			},
+		{
+				"handlerName": "on_terminateallwindows",
+				"timestamp": "2025-02-18 12:29:43.939 +0530",
+				"message": "[windowsAltKey]f",
+				"scriptName": "BrowserUtils/ChromeUtils.script",
+				"handlerLine": 2,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_terminateallwindows",
+				"timestamp": "2025-02-18 12:29:44.688 +0530",
+				"message": "x",
+				"scriptName": "BrowserUtils/ChromeUtils.script",
+				"handlerLine": 3,
+				"identifier": "typetext"
+			},
+		{
+				"message": "(Duration:\"49.196\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-02-18 12:28:55 +0530\", Successes:\"1\", TestCase:\"TestCases/Register to NopCommerce.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-18 12:29:44.716 +0530"
+			},
+		{
+				"message": "Execution Time 0:00:49 TestCases/Register to NopCommerce.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-02-18 12:29:44.776 +0530"
+			}
+	],
+	"createdTimestamp": "2025-02-18 12:28:55.518 +0530"
+}
