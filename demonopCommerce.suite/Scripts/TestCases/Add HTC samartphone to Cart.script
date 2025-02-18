@@ -1,10 +1,3 @@
 ﻿Put +
 Log "Suite-Version-3"
 Put +
-"ApplicationUtils/InitialSetup".LaunchNopCommerce
-"ApplicationUtils/HomeScreen".ElectronicsMenu "Cell phones"
-"ApplicationUtils/HomeScreen".SelectAnyProduct "HTC smartphone"
-"ApplicationUtils/HomeScreen".AddToCart
-"ApplicationUtils/HomeScreen".VerifySuccessMessageOfProductAddingToCart
-"ApplicationUtils/HomeScreen".SelectShoppingCart
-"BrowserUtils/ChromeUtils".TerminateAllWindows
